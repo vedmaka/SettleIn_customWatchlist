@@ -1,0 +1,7 @@
+{
+  "@metadata": {
+    "authors": []
+  },
+  "customwatchlist-desc": "This is an example extension",
+  "customwatchlist-i18n-welcome": "Welcome to the localization file of the customWatchlist extension."
+}

@@ -1,0 +1,9 @@
+{
+  "@metadata": {
+    "authors": [
+      "DCamer"
+    ]
+  },
+  "customwatchlist-desc": "Это пример расширения",
+  "customwatchlist-i18n-welcome": "Добро пожаловать в файл локализации расширения customWatchlist."
+}

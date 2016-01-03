@@ -1,0 +1,60 @@
+{
+	"name": "customWatchlist",
+	"version": "0.0.1",
+	"author": [
+		"Jon Anderton"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:customWatchlist",
+	"descriptionmsg": "customwatchlist-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"AutoloadClasses": {
+        "customWatchlist": "customWatchlist.class.php",
+		"customWatchlistHooks": "customWatchlist.hooks.php",
+		"SpecialcustomWatchlist": "specials/SpecialcustomWatchlist.php",
+		"customWatchlistApi": "includes/customWatchlist.api.php"
+	},
+	"config": {
+		"customWatchlistEnableFoo": true
+	},
+	"callback": "customWatchlistHooks::onExtensionLoad",
+	"ExtensionMessagesFiles": {
+		"customWatchlistAlias": "customWatchlist.i18n.alias.php",
+		"customWatchlistMagic": "customWatchlist.i18n.magic.php"
+	},
+	"Hooks": {
+		"NameOfHook": [
+			"customWatchlistHooks::onNameOfHook"
+		],
+		"ParserFirstCallInit": [
+			"customWatchlistHooks::onParserFirstCallInit"
+		]
+	},
+	"MessagesDirs": {
+		"customWatchlist": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.customwatchlist.foo": {
+			"scripts": [
+				"modules/ext.customWatchlist.foo.js",
+				"modules/ext.customWatchlist.js"
+			],
+			"styles": [
+				"modules/ext.customWatchlist.foo.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "customWatchlist"
+	},
+	"SpecialPages": {
+		"customWatchlist": "SpecialcustomWatchlist"
+	},
+	"APIModules": {
+		"customwatchlist": "customWatchlistApi"
+	},
+	"manifest_version": 1
+}

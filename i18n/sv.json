@@ -1,0 +1,10 @@
+{
+  "@metadata": {
+    "authors": [
+      "Jopparn",
+      "LittleGun"
+    ]
+  },
+  "customwatchlist-desc": "Detta är ett exempel-tillägg",
+  "customwatchlist-i18n-welcome": "Välkommen till customWatchlist-tilläggets lokaliseringsfil."
+}
