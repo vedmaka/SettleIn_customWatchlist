@@ -43,6 +43,10 @@
 			],
 			"styles": [
 				"modules/ext.customWatchlist.foo.css"
+			],
+			"messages": [
+				"customwatchlist-add",
+				"customwatchlist-remove"
 			]
 		}
 	},

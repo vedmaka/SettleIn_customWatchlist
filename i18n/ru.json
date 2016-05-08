@@ -1,9 +1,9 @@
 {
   "@metadata": {
-    "authors": [
-      "DCamer"
-    ]
+    "authors": []
   },
-  "customwatchlist-desc": "Это пример расширения",
-  "customwatchlist-i18n-welcome": "Добро пожаловать в файл локализации расширения customWatchlist."
+  "customwatchlist-desc": "Extension for SettleIn skin provides inline-watchlist functionality",
+  "customwatchlist-i18n-welcome": "Welcome to the localization file of the customWatchlist extension.",
+  "customwatchlist-add": "Отслеживать",
+  "customwatchlist-remove": "Не отслеживать"
 }

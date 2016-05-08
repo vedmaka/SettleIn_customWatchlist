@@ -55,9 +55,9 @@
         updateUI: function() {
             var contents = '';
             if( this.isWatched ) {
-                contents = '<i class="fa fa-heart"></i> Remove from watchlist';
+                contents = '<i class="fa fa-heart"></i> ' + mw.msg('customwatchlist-remove');
             }else{
-                contents = '<i class="fa fa-heart-o"></i> Add to watchlist';
+                contents = '<i class="fa fa-heart-o"></i> ' + mw.msg('customwatchlist-add');
             }
             this.$element.html( contents );
         },
