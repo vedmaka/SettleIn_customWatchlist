@@ -27,4 +27,12 @@ class customWatchlistHooks
 		$parser->setFunctionHook( 'customwatchlist', 'customWatchlist::render' );
 	}
 
+	/**
+	 * @param OutputPage $out
+	 */
+	public static function onBeforePageDisplay( $out )
+	{
+		$out->addModules('ext.customwatchlist.foo');
+	}
+
 }

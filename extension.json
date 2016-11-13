@@ -28,6 +28,9 @@
 		],
 		"ParserFirstCallInit": [
 			"customWatchlistHooks::onParserFirstCallInit"
+		],
+		"BeforePageDisplay": [
+			"customWatchlistHooks::onBeforePageDisplay"
 		]
 	},
 	"MessagesDirs": {

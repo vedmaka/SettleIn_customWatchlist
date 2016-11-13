@@ -55,11 +55,15 @@
         updateUI: function() {
             var contents = '';
             if( this.isWatched ) {
-                contents = '<i class="fa fa-heart"></i> ' + mw.msg('customwatchlist-remove');
+                // contents = '<i class="fa fa-heart"></i> ' + mw.msg('customwatchlist-remove');
+                this.$element.addClass('is-watched');
+                this.$element.find('a').attr('title', mw.msg('customwatchlist-remove'));
             }else{
-                contents = '<i class="fa fa-heart-o"></i> ' + mw.msg('customwatchlist-add');
+                // contents = '<i class="fa fa-heart-o"></i> ' + mw.msg('customwatchlist-add');
+                this.$element.removeClass('is-watched');
+				this.$element.find('a').attr('title', mw.msg('customwatchlist-add'));
             }
-            this.$element.html( contents );
+            // this.$element.html( contents );
         },
 
         displayAnon: function() {
