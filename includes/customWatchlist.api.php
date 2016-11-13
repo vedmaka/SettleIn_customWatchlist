@@ -21,14 +21,15 @@ class customWatchlistApi extends ApiBase {
         }
 
         switch( $this->params['do'] ) {
-            case 'info':
+	        // Retrieves watch status
+        	case 'info':
                 $this->info();
                 break;
-
+			// Adds page into users watchlist
             case 'watch':
                 $this->watch();
                 break;
-
+			// Removes page from user watchlist
             case 'unwatch':
                 $this->unwatch();
                 break;
@@ -38,16 +39,25 @@ class customWatchlistApi extends ApiBase {
 
     }
 
+	/**
+	 *
+	 */
     private function unwatch()
     {
         $this->user->removeWatch( Title::newFromID( $this->params['page_id'] ) );
     }
 
+	/**
+	 *
+	 */
     private function watch()
     {
         $this->user->addWatch( Title::newFromID( $this->params['page_id'] ) );
     }
 
+	/**
+	 *
+	 */
     private function info()
     {
         $isWatched = $this->user->isWatched( Title::newFromID( $this->params['page_id'] ) );
