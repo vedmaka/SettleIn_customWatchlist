@@ -12,7 +12,10 @@
         this.watchToken = null;
         this.pageId = mw.config.get('wgArticleId');
         this.isWatched = false;
-        this.init();
+
+        if( this.pageId && this.pageId != undefined ) {
+			this.init();
+		}
     }
 
     CustomWatchlist.prototype = {
